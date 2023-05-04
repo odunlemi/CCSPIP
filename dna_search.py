@@ -2,7 +2,7 @@
 # A nucleotide can be represented with a simple IntEnum - class; Enum where members are also (and must be) ints - with four cases
 
 from enum import IntEnum
-from typing import Tuple, List  # Tuple and List are imported to assist with type hints
+from typing import Tuple, List  # tuple and List are imported to assist with type hints
 
 Nucleotide: IntEnum = IntEnum('Nucleotide', ('A', 'C', 'G', 'T'))
 
@@ -37,5 +37,5 @@ gat: Codon = (Nucleotide.G, Nucleotide.A, Nucleotide.T)
     Python built-in sequence types all implement the __contains__() method, which allows for search with the in operator
  print(linear_contains(my_gene, acg))  # True
  print(linear_contains(my_gene, gat))  # False'''
-print(acg in my_gene)  # True
-print(gat in my_gene)  # False
+print(acg in my_gene)  # true
+print(gat in my_gene)  # false

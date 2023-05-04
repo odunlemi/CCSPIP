@@ -1,9 +1,9 @@
 # The Towers of Hanoi
 
 # Modelling a stack
-from typing import TypeVar, Generic, List  # The import of Generic enables the class Stack to be generic over a particular type in type hints
+from typing import TypeVar, Generic, List  # the import of Generic enables the class Stack to be generic over a particular type in type hints
 T = TypeVar('T')
-# The arbitrary type T is defined here anc can be any type
+# The arbitrary type T is defined here can be any type
 # When a type hint is later used for a Stack to solve the Hanoi problem, it it type-hinted as Stack[int]
 # Which means T is filled with the type int; the stack is a stack of integers
 
