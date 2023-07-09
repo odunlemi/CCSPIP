@@ -48,11 +48,12 @@ class CompressedGene:
 # Using the sys.getsizeof() method
 # We can indicate in the output whether we did save almost 75% of memory cost
 # Of storing the gene through this compression scheme
+
 if __name__=="__main__":
     from sys import getsizeof
-    original: str = "TAGC" * 50
-    print("original is {} bytes".format(getsizeof(original)))
+    original: str = "TAGC" * 10
+    print("Original is {} bytes".format(getsizeof(original)))
     compressed: CompressedGene = CompressedGene(original)  # compress
-    print("compressed is {} bytes".format(getsizeof(compressed.bit_string)))
+    print("Compressed is {} bytes".format(getsizeof(compressed.bit_string)))
     print(compressed)  # decompress
     print("original and decompressed are the same: {}".format(original == compressed.decompress()))

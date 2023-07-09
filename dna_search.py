@@ -37,5 +37,6 @@ gat: Codon = (Nucleotide.G, Nucleotide.A, Nucleotide.T)
     Python built-in sequence types all implement the __contains__() method, which allows for search with the in operator
  print(linear_contains(my_gene, acg))  # True
  print(linear_contains(my_gene, gat))  # False'''
+ 
 print(acg in my_gene)  # true
 print(gat in my_gene)  # false

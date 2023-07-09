@@ -1,6 +1,6 @@
 # The mathematically sigf. number pi can be derived using a series of formulas
 # One is the Leibniz formula which is implelemented here
-# It posits that the convergence of the ff infifnte series is equal to pi
+# It posits that the convergence of the following infifnte series is equal to pi
 # pi = 4/1 - 4/3 + 4/5 - 4/7 + 4/9 - 4/11 ...
 
 def calcualte_pi(n_terms: int) -> float:
@@ -19,4 +19,4 @@ def calcualte_pi(n_terms: int) -> float:
     return pi
 
 if __name__ == "__main__":
-    print(calcualte_pi(10000000)) # the higher the value of n_terms, the more accurate pi will be calculated 
+    print(calcualte_pi(10000000)) # the higher the value of n_terms, the more accurate pi will be calculated
